@@ -11,7 +11,7 @@
 }
 
 .navbar-cartIcone {
-  @apply flex relative
+  @apply flex relative cursor-pointer
 }
 
 .navbar-cartIcone > div {
