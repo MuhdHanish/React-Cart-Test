@@ -1,0 +1,10 @@
+.product-card{
+    @apply px-4 min-h-[350px] 
+      relative  border border-gray-200 rounded-xl
+     hover:-translate-y-1 hover:shadow-xl transition duration-500
+      max-w-[400px] cursor-pointer flex flex-col gap-3
+}
+
+.add-to-cart{
+    @apply absolute top-2 right-2 border shadow-xl bg-white hover:bg-textColor text-textColor hover:text-white rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity
+}
