@@ -1,0 +1,24 @@
+.cart-container{
+    @apply flex flex-col w-full justify-start items-start gap-10 
+}
+
+.cart-heading{
+    @apply flex justify-center items-center gap-5 
+}
+
+.cart-body{
+    @apply w-full h-fit flex flex-col justify-start items-start gap-4
+}
+
+.cart-product{
+    @apply w-full sm:w-2/3  flex justify-between items-center border p-2 rounded-md
+}
+
+
+.cart-buttons{
+    @apply flex w-full h-fit justify-start items-center text-[14px] gap-4
+}
+
+.cart-button{
+    @apply p-1 shadow-md rounded-full border w-6 h-6 flex justify-center items-center outline-none bg-gray-100
+}
