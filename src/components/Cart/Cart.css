@@ -1,5 +1,5 @@
 .cart-container{
-    @apply flex flex-col w-full justify-start items-start gap-10 
+    @apply flex flex-col w-full justify-start items-start gap-10
 }
 
 .cart-heading{
@@ -7,7 +7,7 @@
 }
 
 .cart-body{
-    @apply w-full h-fit flex flex-col justify-start items-start gap-4
+    @apply w-full h-fit flex flex-col justify-start items-start gap-4 mb-5
 }
 
 .cart-product{

@@ -2,8 +2,11 @@ import PropTypes from "prop-types";
 import "./ProductCard.css"
 import StarRating from "./StarRating/StarRatring";
 import { FiShoppingBag } from "react-icons/fi";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../../redux/cartSlice/cartSlice";
 
 const ProductCard = ({ data }) => {
+  const dispatch = useDispatch();
   return (
     <div className="product-card group">
       <div>
@@ -14,7 +17,12 @@ const ProductCard = ({ data }) => {
           height={300}
           alt={data.name}
         />
-        <div className="add-to-cart">
+        <div
+          className="add-to-cart"
+          onClick={() => {
+            dispatch(addToCart({ product: data }));
+          }}
+        >
           <FiShoppingBag style={{ fontSize: "22px" }} />
         </div>
       </div>
