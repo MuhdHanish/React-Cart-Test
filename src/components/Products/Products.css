@@ -1,3 +1,28 @@
 .products {
     @apply grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 xl:gap-x-20 xl:gap-y-10
 }
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.pagination {
+    @apply flex justify-center items-center w-full h-fit gap-5 mt-10
+}
+
+.pagination-button{
+    @apply w-10 h-10 cursor-pointer text-[12px] bg-textColor rounded-full p-1 font-semibold text-white flex justify-center items-center
+}

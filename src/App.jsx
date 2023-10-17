@@ -7,7 +7,7 @@ function App() {
   const [show, setShow] = useState(false);
   return (
     <>
-      <div className="w-screen h-screen p-5">
+      <div className="w-screen h-screen p-5 overflow-x-hidden">
         <nav className="flex w-full justify-end">
           <NavBar show={show} setShow={setShow} />
         </nav>
