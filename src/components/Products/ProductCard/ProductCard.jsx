@@ -10,7 +10,7 @@ const ProductCard = ({ data, pop,setPop }) => {
   useEffect(() => {
     setTimeout(() => {
       setPop(false);
-    },4000)
+    },5000)
   },[pop,setPop])
   const dispatch = useDispatch();
   return (
